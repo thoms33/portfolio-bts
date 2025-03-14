@@ -59,22 +59,22 @@ function TechWatch() {
     {
       name: "React.js",
       description: "React est une bibliothèque JavaScript utilisée pour construire des interfaces utilisateur dynamiques et performantes.",
-      image: "src/assets/react.svg",
+      image: "/react.svg",
     },
     {
       name: "Vue.js",
       description: "Vue.js est un framework progressif permettant de créer des applications web interactives et légères.",
-      image: "src/assets/Vue.js.svg",
+      image: "/Vue.js.svg",
     },
     {
       name: "Angular",
       description: "Angular est un framework complet développé par Google pour la création d’applications web robustes et évolutives.",
-      image: "src/assets/Angular.svg",
+      image: "/Angular.svg",
     },
     {
       name: "Svelte",
       description: "Svelte est un framework moderne permettant de compiler le code en JavaScript optimisé pour un rendu ultra rapide.",
-      image: "/src/assets/Svelte.svg", 
+      image: "/Svelte.svg", 
     },
   ];
 

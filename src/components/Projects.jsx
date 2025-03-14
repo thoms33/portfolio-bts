@@ -12,17 +12,17 @@ function Projects() {
     { 
       name: "M2L", 
       description: "Développement de la partie Responsable de Formation.", 
-      image: "/src/assets/m2l_placeholder.jpg"
+      image: "/m2l_placeholder.jpg"
     },
     { 
       name: "BioRelais", 
       description: "Développement de la partie Client.", 
-      image: "/src/assets/biorelais_placeholder.jpg"
+      image: "/biorelais_placeholder.jpg"
     },
     { 
       name: "Application Android Studio", 
       description: "Développement d’une application mobile.", 
-      image: "/src/assets/android_placeholder.jpg"
+      image: "/android_placeholder.jpg"
     }
   ];
 

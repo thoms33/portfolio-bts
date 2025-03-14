@@ -22,3 +22,35 @@ body {
   height: 100vh;
   padding-top: 60px; /* Décalage pour ne pas être caché par le Navbar */
 }
+/* Ajustement général pour mobile */
+@media screen and (max-width: 768px) {
+  .projects-grid {
+    flex-direction: column; /* Met les projets en colonne sur mobile */
+    align-items: center;
+  }
+
+  .project-card {
+    width: 90%; /* Ajuste la taille des cartes sur petit écran */
+  }
+
+  .fullscreen-image {
+    max-width: 95%;
+    max-height: 80vh;
+  }
+
+  /* Corriger la navigation */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  /* Correction pour le PDF */
+  .pdf-container iframe {
+    height: 400px;
+  }
+}

@@ -12,7 +12,7 @@ function Profile() {
 
       <div className="pdf-container">
         <iframe 
-          src="/src/assets/tableau_synthese.pdf" 
+          src="/tableau_synthese.pdf" 
           width="100%" 
           height="600px"
           title="Tableau de Synthèse - E4"
