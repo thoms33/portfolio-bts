@@ -39,17 +39,17 @@
   color: #ffb400;
 }
 
-/* 📱 Navbar mobile (Style Amazon) */
+/* 📱 Navbar mobile (Style Amazon amélioré) */
 @media screen and (max-width: 768px) {
   .navbar {
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 10px 15px;
   }
 
   /* Icône du menu burger */
   .burger-menu {
     display: block;
-    font-size: 24px;
+    font-size: 22px;
     color: #f5f5f5;
     cursor: pointer;
     z-index: 110;
@@ -59,8 +59,8 @@
   .nav-links {
     position: fixed;
     top: 0;
-    left: -100%;
-    width: 250px;
+    left: -70%; /* Moins large */
+    width: 70%;
     height: 100vh;
     background: rgba(44, 44, 44, 0.95);
     backdrop-filter: blur(10px);
@@ -68,7 +68,7 @@
     align-items: center;
     justify-content: center;
     transition: left 0.3s ease-in-out;
-    gap: 20px;
+    gap: 25px; /* Ajout d’espace entre les liens */
     padding-top: 60px;
   }
 
@@ -79,13 +79,14 @@
 
   /* Style des liens dans le menu */
   .nav-links a {
-    font-size: 20px;
+    font-size: 18px;
     padding: 15px;
     width: 100%;
     text-align: center;
+    transition: background 0.3s;
   }
 
   .nav-links a:hover {
-    background: rgba(255, 180, 0, 0.5);
+    background: rgba(255, 180, 0, 0.3);
   }
 }
