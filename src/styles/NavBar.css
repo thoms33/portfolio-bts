@@ -1,23 +1,30 @@
+/* 🖥️ Navbar classique sur desktop */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(44, 44, 44, 0.9); /* Fond semi-transparent */
+  background: rgba(44, 44, 44, 0.9);
   backdrop-filter: blur(10px);
   padding: 15px;
   display: flex;
   justify-content: center;
+  align-items: center;
   z-index: 100;
 }
 
-.navbar ul {
+/* Liste des liens */
+.nav-links {
   list-style: none;
   display: flex;
   gap: 30px;
 }
 
-.navbar a {
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
   text-decoration: none;
   color: #f5f5f5;
   font-size: 18px;
@@ -27,7 +34,58 @@
   border-radius: 10px;
 }
 
-.navbar a:hover {
+.nav-links a:hover {
   background: rgba(255, 180, 0, 0.3);
   color: #ffb400;
+}
+
+/* 📱 Navbar mobile (Style Amazon) */
+@media screen and (max-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  /* Icône du menu burger */
+  .burger-menu {
+    display: block;
+    font-size: 24px;
+    color: #f5f5f5;
+    cursor: pointer;
+    z-index: 110;
+  }
+
+  /* Cacher la liste des liens par défaut */
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    height: 100vh;
+    background: rgba(44, 44, 44, 0.95);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.3s ease-in-out;
+    gap: 20px;
+    padding-top: 60px;
+  }
+
+  /* Afficher le menu lorsqu'il est ouvert */
+  .nav-links.open {
+    left: 0;
+  }
+
+  /* Style des liens dans le menu */
+  .nav-links a {
+    font-size: 20px;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links a:hover {
+    background: rgba(255, 180, 0, 0.5);
+  }
 }
