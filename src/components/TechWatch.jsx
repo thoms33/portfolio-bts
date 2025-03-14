@@ -106,7 +106,6 @@ function TechWatch() {
       <div className="frameworks-grid">
         {frameworks.map((fw, index) => (
           <div key={index} className="framework-card">
-            <FontAwesomeIcon icon={fw.icon} className="framework-icon" />
             <img src={fw.image} alt={fw.name} className="framework-image" />
             <h3>{fw.name}</h3>
             <p>{fw.description}</p>
