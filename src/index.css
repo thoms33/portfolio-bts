@@ -1,0 +1,24 @@
+/* Réinitialisation globale pour éviter les décalages */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Applique un fond uniforme */
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #2c2c2c;
+  color: #f5f5f5;
+  text-align: center;
+  min-height: 100vh;
+}
+
+/* Conteneur principal pour empêcher les décalages */
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-top: 60px; /* Décalage pour ne pas être caché par le Navbar */
+}

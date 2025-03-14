@@ -1,0 +1,81 @@
+/* Conteneur principal */
+.profile-container {
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 80px;
+  color: #f5f5f5;
+  background-color: #2c2c2c;
+  min-height: 100vh;
+}
+
+/* Titre principal */
+.profile-container h1 {
+  color: #ffb400;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+/* Conteneur du PDF */
+.pdf-container {
+  width: 80%;
+  margin: 20px auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Explications */
+.explanations {
+  margin-top: 40px;
+  text-align: left;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Cartes explicatives */
+.explanation-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Effet au survol */
+.explanation-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(255, 180, 0, 0.5);
+}
+
+/* Titres des sections */
+.explanation-card h3 {
+  color: #ffb400;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+/* Liste des explications */
+.explanation-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.explanation-card li {
+  font-size: 1.1rem;
+  color: #ddd;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+/* Icone de validation */
+.explanation-card li::before {
+  content: "✅";
+  position: absolute;
+  left: 0;
+  color: #ffb400;
+  font-size: 1.2rem;
+}
